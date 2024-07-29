@@ -1,0 +1,5 @@
+requests
+schedule
+socket
+decimal
+python-dotenv
