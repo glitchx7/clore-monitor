@@ -71,7 +71,7 @@ def get_total_spends():
         send_telegram_message(error_message)
         return 0
     
-    total_spend = sum(Decimal(str(order.get('spend', '0'))) for order in data['orders'])
+    total_spend = sum(Decimal(str(order.get('price', '0'))) for order in data['orders'])
     print(f"Total spend: {total_spend}")
     return total_spend
 
